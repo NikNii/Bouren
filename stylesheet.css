@@ -5,12 +5,13 @@
         height: 99vh;
         margin: 0;
         padding: 0;
+        scroll-behavior: smooth;
     }
     #content {
         width: 90%;
         margin: auto;
     }
-    nav{
+    header{
         display: block;
         position: relative;
         top: 0;
@@ -34,7 +35,7 @@
         width: 100%;
         margin: 0;
     }
-    nav h1, nav p {
+    header h1, header p {
         margin: 0;
         font-size: 100px;
         text-align: center;
@@ -43,28 +44,55 @@
         filter: none;
         z-index: 2;
     }
-    nav p {
+    header p {
         color: white;
         font-size: 24px;
         font-style: italic;
+    }
+
+    #navButtons{
+        width: 100%;
+        position: absolute;
+        bottom: -100px;
+        text-align: center;
+    }
+
+    .navButton{
+        border: none;
+        font-size: 36px;
+        background-color: transparent;
+        color: orange;
+        transition: all 0.1s ease-in;
+        text-decoration: none;
+    }
+
+    .navButton:hover{
+        color: coral;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    }
+
+    #contacts, #services {
+        transition: all 0.5s ease;
     }
 }
 
 /* Mobile version */
 @media only screen and (max-width: 899px){
     html, body, #container {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         margin: 0;
         padding: 0;
+        overflow: auto;
     }
     
     #content {
-        width: 75%;
-        height: 100%;
+        display:block;
+        width: 85%;
         margin: auto;
+        text-align: justify;
     }
-    nav{
+    header{
         display: block;
         position: relative;
         top: 0;
@@ -79,7 +107,7 @@
         background-repeat: no-repeat;
         background-position: bottom;
         box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-        z-index: 1;
+        z-index: 2;
     }
     #navText {
         display: block;
@@ -88,7 +116,7 @@
         width: 100%;
         margin: 0;
     }
-    nav h1, nav p {
+    header h1, header p {
         margin: 0;
         font-size: 100px;
         text-align: center;
@@ -97,12 +125,48 @@
         filter: none;
         z-index: 2;
     }
-    nav h1 {
+    header h1 {
         font-size: 70px;
     }
-    nav p {
+    header p {
         color: white;
         font-size: 20px;
         font-style: italic;
+    }
+
+    #navButtons{
+        display: flex;
+        width: 100%;
+        height: 30px;
+        margin-top: -30px;
+        box-sizing: border-box;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.35);
+        z-index: 3;
+    }
+
+    .navButton{
+        height: 100%;
+        width: 50%;
+        padding: 3px;
+        box-sizing: border-box;
+        border-right: solid 1px rgb(55, 55, 55);
+        border-left: solid 1px rgb(55, 55, 55);
+        font-size: 21px;
+        background-color: transparent;
+        color: orange;
+        /* background-color: orange; */
+        transition: all 0.1s ease-in;
+        text-decoration: none;
+    }
+
+    #contacts, #services {
+        transition: all 0.5s ease;
+    }
+    #yhteystiedot h1, #palvelut h1{
+        padding-top: 55px;
     }
 }
