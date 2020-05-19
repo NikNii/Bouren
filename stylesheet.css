@@ -40,7 +40,7 @@
 		margin: 0;
 		font-size: 100px;
 		text-align: center;
-		color: orange;
+		color: red;
 		text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 		filter: none;
 		z-index: 2;
@@ -85,7 +85,7 @@
 	}
 
 	.navButton:hover {
-		color: rgb(255, 136, 0);
+		color: red;
 		text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.2);
 		background-color: white;
 	}
@@ -106,7 +106,7 @@
 		font-weight: lighter;
 	}
 	#content h1 {
-		color: orange;
+		color: red;
 	}
 	#yhteystiedot,
 	#palvelut {
@@ -294,7 +294,7 @@
 		border-left: solid 1px rgb(55, 55, 55);
 		font-size: 21px;
 		background: radial-gradient(#2e2e2e 50%, #000000);
-		color: orange;
+		color: red;
 		/* background-color: orange; */
 		transition: all 0.1s ease-in;
 		text-decoration: none;
@@ -343,7 +343,7 @@
 	}
 	.yritys h2 {
 		margin: 3px 0 7px 0;
-		color: orange;
+		color: red;
 		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
 	}
 	#yhteystiedot ul {
