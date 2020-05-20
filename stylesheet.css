@@ -27,7 +27,7 @@
 		z-index: 1;
 	}
 
-	#logo{
+	#logo {
 		display: block;
 		max-width: 85%;
 		margin-left: auto;
@@ -229,12 +229,12 @@
 		z-index: 2;
 	}
 
-	#logo{
+	#logo {
 		display: block;
 		max-width: 85%;
 		margin-left: auto;
 		margin-right: auto;
-		padding-top: 5%;
+		padding-top: 3px;
 		width: auto;
 	}
 
@@ -272,56 +272,61 @@
 	#navButtons {
 		display: flex;
 		width: 100%;
-		height: 30px;
+		height: 50px;
 		margin-top: -30px;
 		box-sizing: border-box;
 		text-align: center;
 		position: sticky;
 		top: 0;
 		left: 0;
-		background-color: rgba(0, 0, 0, 0.35);
 		z-index: 3;
 	}
 	#navBg {
 		display: flex;
 		width: 100%;
-		height: 30px;
+		height: 50px;
 		margin-top: -30px;
 		box-sizing: border-box;
+		box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px;
+		background: linear-gradient(rgb(240, 240, 240) 20%, rgb(255, 255, 255));
 		text-align: center;
 		position: sticky;
 		top: 0;
 		left: 0;
-		background-color: rgb(0, 0, 0);
 		z-index: 1;
 	}
 
 	.navButton {
 		height: 100%;
 		width: 50%;
-		padding: 3px;
 		box-sizing: border-box;
-		border-right: solid 1px rgb(55, 55, 55);
-		border-left: solid 1px rgb(55, 55, 55);
+		border-right: solid 1px rgb(235, 235, 235);
+		border-left: solid 1px rgb(235, 235, 235);
+		border-radius: 15px 15px 0 0;
 		font-size: 21px;
 		font-family: 'Montserrat', sans-serif;
-		background: black;
-		color: red;
+		color: black;
+		background: linear-gradient(rgb(240, 240, 240) 20%, rgb(255, 255, 255));
 		/* background-color: orange; */
 		transition: all 0.1s ease-in;
 		text-decoration: none;
+		line-height: 50px;
 	}
 	#content {
 		display: block;
 		width: 90%;
 		margin: auto;
-		text-align: justify;
+		text-align: center;
 		font-family: 'Montserrat', sans-serif;
+		line-height: 25px;
 	}
 	#content h1,
 	h2,
 	h3 {
 		font-family: 'Raleway', sans-serif;
+	}
+	#palvelut {
+		word-spacing: 6px;
 	}
 	#contacts,
 	#services {
@@ -329,8 +334,54 @@
 	}
 	#yhteystiedot h1,
 	#palvelut h1 {
-		padding-top: 30px;
+		padding-top: 60px;
+		margin-top: -20px;
 	}
+	.infoLink {
+		display: inline-block;
+		color: #000000;
+	}
+	#yhteystiedot h3 {
+		margin: 0;
+		padding: 0;
+	}
+	#post,
+	#phone,
+	#email {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.yritys {
+		margin-bottom: 20px;
+		padding: 10px;
+		box-sizing: border-box;
+		border-radius: 5px;
+		background-color: rgb(245, 245, 245);
+	}
+	.yritys h2 {
+		margin: 3px 0 7px 0;
+		color: red;
+		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+	}
+	#yhteystiedot ul {
+		margin: 6px;
+		padding: 0;
+		list-style: none;
+	}
+	#yhteystiedot li {
+		margin-top: 7px;
+		margin-bottom: 10px;
+		padding: 0;
+		text-indent: 0;
+	}
+	#yhteystiedot ul a {
+		color: #000000;
+	}
+	#yhteystiedot i {
+		font-size: 18px;
+		vertical-align: middle;
+	}
+
 	#footer {
 		width: 100%;
 		margin: 0;
@@ -353,38 +404,5 @@
 	#footer li {
 		text-indent: none;
 		list-style-type: none;
-	}
-	#yhteystiedot h3 {
-		margin: 0;
-		padding: 0;
-	}
-	.yritys {
-		margin-bottom: 10px;
-		padding: 10px;
-		box-sizing: border-box;
-		border-radius: 5px;
-		background-color: rgb(245, 245, 245);
-	}
-	.yritys h2 {
-		margin: 3px 0 7px 0;
-		color: red;
-		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
-	}
-	#yhteystiedot ul {
-		margin: 6px;
-		padding: 0;
-		list-style: none;
-	}
-	#yhteystiedot li {
-		margin-top: 7px;
-		padding: 0;
-		text-indent: 0;
-	}
-	#yhteystiedot ul a {
-		color: #000000;
-	}
-	#yhteystiedot i {
-		font-size: 18px;
-		vertical-align: middle;
 	}
 }
