@@ -29,6 +29,7 @@
 
 	#logo{
 		display: block;
+		max-width: 85%;
 		margin-left: auto;
 		margin-right: auto;
 		padding-top: 5%;
@@ -227,6 +228,16 @@
 		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 		z-index: 2;
 	}
+
+	#logo{
+		display: block;
+		max-width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 5%;
+		width: auto;
+	}
+
 	header h1 {
 		font-family: 'Righteous', cursive;
 		font-weight: lighter;
@@ -293,7 +304,8 @@
 		border-right: solid 1px rgb(55, 55, 55);
 		border-left: solid 1px rgb(55, 55, 55);
 		font-size: 21px;
-		background: radial-gradient(#2e2e2e 50%, #000000);
+		font-family: 'Montserrat', sans-serif;
+		background: black;
 		color: red;
 		/* background-color: orange; */
 		transition: all 0.1s ease-in;
@@ -321,14 +333,26 @@
 	}
 	#footer {
 		width: 100%;
-		height: 100px;
-		padding: 10px;
+		margin: 0;
+		padding: 15px;
+		font-family: 'Oswald', sans-serif;
 		box-sizing: border-box;
 		position: relative;
 		bottom: 0;
 		color: white;
 		background-color: rgb(24, 24, 24);
 		box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
+		text-align: center;
+	}
+
+	#footer ul {
+		margin: 5px auto 2px auto;
+		padding: 0px;
+	}
+
+	#footer li {
+		text-indent: none;
+		list-style-type: none;
 	}
 	#yhteystiedot h3 {
 		margin: 0;
